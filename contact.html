@@ -1,0 +1,94 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="img/favicon.jpg" type="image/jpeg" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="nav-inner-container">
+        <div class="social-links" aria-label="Social links">
+          <a
+            href="https://www.facebook.com/profile.php?id=61594610933224"
+            aria-label="Facebook"
+            ><img src="img/facebook.png" alt="Facebook"
+          /></a>
+          <a href="https://www.instagram.com/orriswinds/" aria-label="Instagram"
+            ><img src="img/instagram.png" alt="Instagram"
+          /></a>
+          <a href="mailto:orriswinds@gmail.com" aria-label="Email"
+            ><img src="img/mail.png" alt="Email"
+          /></a>
+          <a href="https://www.youtube.com/@OrrisWinds" aria-label="YouTube"
+            ><img src="img/youtube.png" alt="YouTube"
+          /></a>
+        </div>
+        <div class="nav-row">
+          <a class="logo" href="index.html"
+            >Orris Winds
+            <img src="img/favicon.jpg" alt="Orris Winds logo" class="logo-mark"
+          /></a>
+          <button
+            class="nav-toggle"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            ☰
+          </button>
+          <nav class="site-nav" aria-label="Main navigation">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="musicians.html">Musicians</a></li>
+              <li><a href="concerts.html">Upcoming Concerts</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="container contact-page">
+      <h1>Contact Us</h1>
+
+      <div class="contact-card">
+        <p class="contact-email">
+          For general enquiries, please contact us via this form:
+        </p>
+
+        <form
+          class="contact-form"
+          action="https://formspree.io/f/xnpjnpny"
+          method="POST"
+        >
+          <label>
+            Name
+            <input type="text" name="name" placeholder="Your name" required />
+          </label>
+          <label>
+            Email
+            <input
+              type="email"
+              name="email"
+              placeholder="Your email"
+              required
+            />
+          </label>
+          <label>
+            Message
+            <textarea
+              name="message"
+              rows="5"
+              placeholder="Your message"
+              required
+            ></textarea>
+          </label>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
