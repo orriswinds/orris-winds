@@ -781,3 +781,42 @@ div.background {
     height: 100%;
   }
 } */
+
+
+@media (max-width: 768px) {
+  /* 1. Fix the background container for mobile viewports */
+  div.background {
+    height: auto;               /* Removes the rigid 900px height that breaks mobile */
+    min-height: 80vh;           /* Ensures it takes up a good portion of the screen */
+    background-size: cover;     /* Scales image cleanly without distortion */
+    background-position: center top; /* Keeps the musicians centered */
+    flex-direction: column;     /* Stacks quotes vertically instead of horizontally */
+    justify-content: space-between;
+    padding: 1.5rem 1rem;
+    max-width: 100%;            /* Prevents horizontal overflow */
+    box-sizing: border-box;
+  }
+
+  /* 2. Adjust review quotes so they don't break mobile layouts */
+  .review-quote {
+    max-width: 100% !important;  /* Allows quotes to fit mobile width */
+    font-size: 1.05rem;         /* Slightly smaller text for readability */
+    padding: 1rem;
+    margin: 0.5rem 0;
+  }
+
+  .review-bottom-right {
+    margin-top: 1rem;           /* Resets desktop spacing */
+  }
+
+  /* 3. Streamline header navigation spacing on small screens */
+  .nav-inner-container {
+    padding: 0.5rem;
+    gap: 0.5rem;
+  }
+
+  .social-links {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+}
